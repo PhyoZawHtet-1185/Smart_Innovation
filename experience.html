@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="廃校を未来の学び場へ。AI・ロボット・プログラミングを体験できるSmart Innovation School。">
+<title>体験する | Smart Innovation School</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">▦</span>
+    <span>SMART INNOVATION<br><b>SCHOOL</b></span>
+  </a>
+  <button class="menu" onclick="toggleMenu()" aria-label="メニュー">☰</button>
+  <nav id="nav"><a href="index.html" class="">ホーム</a><a href="experience.html" class="active">体験する</a><a href="events.html" class="">イベント</a><a href="about.html" class="">施設について</a><a href="contact.html" class="">予約・お問い合わせ</a><a href="contact.html" class="nav-cta">今すぐ予約</a></nav>
+</header>
+
+<main>
+<section class="sub-hero"><div><span>EXPERIENCE</span><h1>体験する</h1><p>楽しく体験しながら、新しい技術を学ぼう。</p></div><img src="assets/robot.svg" alt="ロボット体験"></section>
+<section class="section">
+<div class="section-title"><span>PROGRAMS</span><h2>体験プログラム</h2><i></i></div>
+<div class="program-grid">
+<article id="robot" class="program-card"><img src="assets/robot.svg" alt=""><div><span>01 / ROBOT</span><h2>ロボット体験</h2><p>ロボットを実際に動かしながら、センサーや仕組みを体験します。</p><button class="btn outline" onclick="showInfo('ロボット体験','ロボットを動かしながら、楽しく技術を学ぶ体験です。')">詳しく見る</button></div></article>
+<article id="ai" class="program-card"><img src="assets/ai.svg" alt=""><div><span>02 / AI</span><h2>AI体験</h2><p>AIを使ってアイデアを考えたり、身近な問題を解決します。</p><button class="btn outline" onclick="showInfo('AI体験','AIを使ったアイデア作りを体験します。')">詳しく見る</button></div></article>
+<article id="code" class="program-card"><img src="assets/code.svg" alt=""><div><span>03 / CODE</span><h2>プログラミング</h2><p>簡単なゲームやWebページを作りながらプログラミングを学びます。</p><button class="btn outline" onclick="showInfo('プログラミング','初心者でも楽しめるプログラミング体験です。')">詳しく見る</button></div></article>
+<article id="making" class="program-card"><img src="assets/making.svg" alt=""><div><span>04 / MAKING</span><h2>ものづくり</h2><p>3Dプリンターなどを使い、自分のアイデアを作品にします。</p><button class="btn outline" onclick="showInfo('ものづくり','アイデアを考えて、実際の作品にする体験です。')">詳しく見る</button></div></article>
+</div>
+</section>
+<section class="mini-cta"><h2>興味のある体験を予約しよう</h2><a class="btn green" href="contact.html">予約する →</a></section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div><strong>SMART INNOVATION SCHOOL</strong><p>廃校を未来の学び場へ。</p></div>
+    <div class="footer-links"><a href="about.html">施設について</a><a href="events.html">イベント</a><a href="contact.html">予約・お問い合わせ</a></div>
+  </div>
+  <small>© Smart Innovation School</small>
+</footer>
+<script src="script.js"></script>
+</body></html>

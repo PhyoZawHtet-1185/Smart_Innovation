@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="廃校を未来の学び場へ。AI・ロボット・プログラミングを体験できるSmart Innovation School。">
+<title>予約・お問い合わせ | Smart Innovation School</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">▦</span>
+    <span>SMART INNOVATION<br><b>SCHOOL</b></span>
+  </a>
+  <button class="menu" onclick="toggleMenu()" aria-label="メニュー">☰</button>
+  <nav id="nav"><a href="index.html" class="">ホーム</a><a href="experience.html" class="">体験する</a><a href="events.html" class="">イベント</a><a href="about.html" class="">施設について</a><a href="contact.html" class="active">予約・お問い合わせ</a><a href="contact.html" class="nav-cta">今すぐ予約</a></nav>
+</header>
+
+<main>
+<section class="sub-hero contact-hero"><div><span>CONTACT</span><h1>予約・お問い合わせ</h1><p>体験やイベントへの参加はこちらから。</p></div></section>
+<section class="section contact-layout">
+<form id="bookingForm" onsubmit="submitForm(event)">
+<h2>体験・イベント予約</h2>
+<label>お名前<input id="name" required placeholder="例：山田 太郎"></label>
+<label>メールアドレス<input type="email" required placeholder="example@mail.com"></label>
+<label>参加したいイベント<select id="eventName"><option>AI体験ワークショップ</option><option>ロボット製作教室</option><option>プログラミング体験</option><option>ドローン体験会</option><option>3Dプリンター入門</option></select></label>
+<label>希望日<input type="date" id="date" required></label>
+<label>人数<select id="people"><option>1人</option><option>2人</option><option>3人</option><option>4人</option><option>5人以上</option></select></label>
+<label>メッセージ<textarea rows="5" placeholder="質問などがあれば入力してください"></textarea></label>
+<button class="btn green full" type="submit">予約を送信する →</button>
+</form>
+<aside class="contact-info"><h2>お問い合わせ先</h2><p>☎ 090-1234-5678</p><p>✉ info@smart-school.jp</p><p>📍 〒123-4567<br>地域イノベーション地区 1-2-3</p><hr><h3>営業時間</h3><p>9:00 - 17:00<br>（休館日：月曜日）</p><div class="map-placeholder">📍<br><small>MAP</small></div></aside>
+<div id="result" class="result" hidden></div>
+</section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div><strong>SMART INNOVATION SCHOOL</strong><p>廃校を未来の学び場へ。</p></div>
+    <div class="footer-links"><a href="about.html">施設について</a><a href="events.html">イベント</a><a href="contact.html">予約・お問い合わせ</a></div>
+  </div>
+  <small>© Smart Innovation School</small>
+</footer>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="廃校を未来の学び場へ。AI・ロボット・プログラミングを体験できるSmart Innovation School。">
+<title>イベント | Smart Innovation School</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">▦</span>
+    <span>SMART INNOVATION<br><b>SCHOOL</b></span>
+  </a>
+  <button class="menu" onclick="toggleMenu()" aria-label="メニュー">☰</button>
+  <nav id="nav"><a href="index.html" class="">ホーム</a><a href="experience.html" class="">体験する</a><a href="events.html" class="active">イベント</a><a href="about.html" class="">施設について</a><a href="contact.html" class="">予約・お問い合わせ</a><a href="contact.html" class="nav-cta">今すぐ予約</a></nav>
+</header>
+
+<main>
+<section class="sub-hero event-hero"><div><span>EVENTS</span><h1>イベント</h1><p>楽しいイベントやワークショップを開催しています。</p></div></section>
+<section class="section">
+<div class="filters"><button class="filter active" onclick="filterEvents('all',this)">すべて</button><button class="filter" onclick="filterEvents('ai',this)">AI</button><button class="filter" onclick="filterEvents('robot',this)">ロボット</button><button class="filter" onclick="filterEvents('code',this)">プログラミング</button><button class="filter" onclick="filterEvents('other',this)">その他</button></div>
+<div class="event-grid">
+<article class="event-card" data-type="ai"><div class="date">6/15<br><small>土</small></div><img src="assets/ai.svg"><span>AI</span><h3>AI体験ワークショップ</h3><p>AIで画像を認識してゲームを作ろう！</p><a href="contact.html">参加予約 →</a></article>
+<article class="event-card" data-type="robot"><div class="date">6/22<br><small>土</small></div><img src="assets/robot.svg"><span>ROBOT</span><h3>ロボット製作教室</h3><p>オリジナルロボットを作って動かそう！</p><a href="contact.html">参加予約 →</a></article>
+<article class="event-card" data-type="code"><div class="date">7/5<br><small>土</small></div><img src="assets/code.svg"><span>CODE</span><h3>プログラミング体験</h3><p>ゲームを作りながらプログラミングを学ぼう。</p><a href="contact.html">参加予約 →</a></article>
+<article class="event-card" data-type="robot"><div class="date">7/13<br><small>日</small></div><img src="assets/robot.svg"><span>ROBOT</span><h3>ドローン体験会</h3><p>ドローンを操縦してみよう！</p><a href="contact.html">参加予約 →</a></article>
+<article class="event-card" data-type="other"><div class="date">7/20<br><small>日</small></div><img src="assets/making.svg"><span>MAKING</span><h3>3Dプリンター入門</h3><p>3Dデザインからプリントまで体験。</p><a href="contact.html">参加予約 →</a></article>
+<article class="event-card" data-type="other"><div class="date">7/27<br><small>日</small></div><img src="assets/facility.svg"><span>FAMILY</span><h3>夏休み特別イベント</h3><p>AI・ロボット・工作を家族で体験！</p><a href="contact.html">参加予約 →</a></article>
+</div>
+</section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div><strong>SMART INNOVATION SCHOOL</strong><p>廃校を未来の学び場へ。</p></div>
+    <div class="footer-links"><a href="about.html">施設について</a><a href="events.html">イベント</a><a href="contact.html">予約・お問い合わせ</a></div>
+  </div>
+  <small>© Smart Innovation School</small>
+</footer>
+<script src="script.js"></script>
+</body></html>
